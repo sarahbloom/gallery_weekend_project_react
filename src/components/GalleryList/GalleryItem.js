@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "./GalleryItem.css"
 
 class GalleryItem extends Component{
     constructor(props){
@@ -23,7 +24,7 @@ class GalleryItem extends Component{
         let displayItem;
         if (this.state.photoVisible){
             displayItem = (<div>
-                <img onClick={this.hideShow} src={imagePath} alt="description" />
+                <img className="photoDisplay" onClick={this.hideShow} src={imagePath} alt="description" />
             </div>)
         } else {
             displayItem = (<div>
