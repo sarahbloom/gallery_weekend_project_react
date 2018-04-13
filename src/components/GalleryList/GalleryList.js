@@ -5,15 +5,12 @@ class GalleryList extends Component{
     //handleClick(){
     // }
 
-    
-    
-
     render(){
         console.log(this.props.photoArray);
 
         let images = this.props.photoArray.map( image => {          
             return(
-                // console.log('xxx', this.props.photoArray),
+                // console.log('GalleryList', this.props.photoArray),
                 < GalleryItem
                 key = {image.id}
                 image = {image} />

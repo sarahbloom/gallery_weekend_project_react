@@ -29,8 +29,8 @@ npm run client
 - [ ] Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.js`.
 - [x ] Create a new **component** for the `GalleryList`.
 - [x ] Create a new **component** called `GalleryItem.js` and 
-- [ ] pass it the individual gallery items via `props`. 
-- [ ] (`POST`) Display all of the images on the screen.
+- [ x] pass it the individual gallery items via `props`. 
+- [x] (`POST`) Display all of the images on the screen.
 - [ ] Swap the image with the description on click.
 - [ ] Display the number likes for each item 
 - [ ] include a like button.
