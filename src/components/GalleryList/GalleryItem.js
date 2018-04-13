@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import "./GalleryItem.css"
+import "./GalleryItem.css";
+import Button from 'material-ui/Button';
+import {Favorite} from 'material-ui-icons';
+
 
 class GalleryItem extends Component{
     constructor(props){
@@ -25,10 +28,14 @@ class GalleryItem extends Component{
         if (this.state.photoVisible){
             displayItem = (<div>
                 <img className="photoDisplay" onClick={this.hideShow} src={imagePath} alt="description" />
+                <br/>
+                <Button variant="fab" size="small" color="secondary"><Favorite/></Button>
             </div>)
         } else {
             displayItem = (<div>
                 <p onClick={this.hideShow}> {imageDescription}</p>
+                <br />
+                <Button variant="fab" size="small" color="secondary"><Favorite /></Button>
             </div>)
         }
 
