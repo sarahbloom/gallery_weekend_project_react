@@ -35,7 +35,7 @@ npm run client
 - [x ] include a like button.
 - [ ] Display the number likes for each item 
 - [ ] When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
-- [ ] Update the gallery each time a like button is clicked.
+- [x] Update the gallery each time a like button is clicked.
 
 ### Wireframes
 

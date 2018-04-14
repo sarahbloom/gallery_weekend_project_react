@@ -41,7 +41,6 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
-        {/* <img src="images/goat_small.jpg"/> */}
         <GalleryList photoArray = {this.state.photoArray}/>
       </div>
     );
