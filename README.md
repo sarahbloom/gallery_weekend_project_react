@@ -31,9 +31,9 @@ npm run client
 - [x ] Create a new **component** called `GalleryItem.js` and 
 - [ x] pass it the individual gallery items via `props`. 
 - [x] (`POST`) Display all of the images on the screen.
-- [ ] Swap the image with the description on click.
+- [x ] Swap the image with the description on click.
+- [x ] include a like button.
 - [ ] Display the number likes for each item 
-- [ ] include a like button.
 - [ ] When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
 - [ ] Update the gallery each time a like button is clicked.
 
