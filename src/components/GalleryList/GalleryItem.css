@@ -1,8 +1,9 @@
-.itemBox {
-    background-color: rgba(102, 144, 102, 0.657);
-    height: 350px;
-    width: 300px;
-    margin: 10px;
+
+.textDisplay {
+    background-color: aliceblue;
+    margin-top: au;
+    height: 200px;
+    width: 200px;
 }
 
 .photoDisplay{
@@ -11,8 +12,8 @@
     width: 200px;
 }
 
-.textDisplay{
-    margin-top: 100px;
-    margin-right: 20px;
-    margin-left: 20px;
+.itemBox {
+    background-color: rgba(102, 144, 102, 0.657);
+    width: 300px;
+    margin: auto;
 }

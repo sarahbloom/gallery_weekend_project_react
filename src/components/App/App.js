@@ -40,7 +40,6 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <p>Gallery goes here</p>
         <GalleryList photoArray={this.state.photoArray} 
               getPhotos={this.getPhotos} 
           likedPhoto={this.likedPhoto}/>

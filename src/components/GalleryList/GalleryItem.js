@@ -39,15 +39,18 @@ class GalleryItem extends Component{
        let displayItem;
 
         if (this.state.photoVisible){
-            displayItem = (<div className="itemBox">
+            displayItem = (
+                <div className="itemBox">
                 <img className="photoDisplay" onClick={this.hideShow} src={imagePath} alt="description" />
                 <br/>
                 <Button variant="fab" size="small" color="secondary" onClick={this.likedPhoto}><Favorite /></Button> 
                 <p><span>{this.props.image.likes} people liked this!</span></p>
             </div>)
         } else {
-            displayItem = (<div className="itemBox">
-                <p className="textDisplay" onClick={this.hideShow}> {imageDescription}</p>
+            displayItem = (
+                
+                <div className="itemBox">
+                <div className="textDisplay" onClick={this.hideShow}> {imageDescription}</div>
                 <br />
                 <Button variant="fab" size="small" color="secondary" onClick={this.likedPhoto}><Favorite /></Button> 
                 <p>{this.props.image.likes} people liked this!</p>
