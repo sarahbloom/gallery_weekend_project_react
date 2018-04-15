@@ -3,16 +3,16 @@ import axios from 'axios';
 import "./GalleryItem.css";
 import Button from 'material-ui/Button';
 import {Favorite} from 'material-ui-icons';
-import Grid from 'material-ui/Grid';
+
+
 
 class GalleryItem extends Component{
     constructor(props){
         super(props)
         this.state = {
             photoVisible: true,
-            // likes: 0
+            // galleryItem: this.props.image
         }//end this.state
-        
     }//end constructor
 
     //METHODS WILL GO HERE (toggle, show pic, show text)
@@ -23,13 +23,15 @@ class GalleryItem extends Component{
         })   
     }//end hideShow
 
-    likedPhoto = () => {
-        console.log('clicked like', this.props.image);
-        this.props.image.likes++
-        axios.put('http://localhost:3000/gallery/like/:id', this.props.image)
+    // likedPhoto = () =>{
+    //     this.props.likedPhoto(this.props.image)
+    // }
+
+    likedPhoto = (image) => {
+        axios.put(`/gallery/like/${this.props.image.id}`)
         .then((response)=>{
-            console.log('clicked photo PUT', this.props.image.likes);
-            // this.props.getPhotos();
+            // console.log('clicked photo PUT', this.props.image.likes);
+            this.props.getPhotos();
         }).catch((err)=>{
             console.log('error in PUT', err);
         })//end .catch
@@ -38,9 +40,8 @@ class GalleryItem extends Component{
     render(){
        let imagePath = `${this.props.image.path}`;
        let imageDescription =`${this.props.image.description}`;
-        let displayItem;
-        // let likesText = `${this.props.image.likes} people liked this!`;
-        // console.log(likesText);
+       let displayItem;
+
         if (this.state.photoVisible){
             displayItem = (<div className="itemBox">
                 <img className="photoDisplay" onClick={this.hideShow} src={imagePath} alt="description" />
@@ -56,12 +57,8 @@ class GalleryItem extends Component{
                 <p>{this.props.image.likes} people liked this!</p>
             </div>)
         }
-        return(
-            <Grid container spacing={16}>
-                {displayItem}
-            </Grid>
-        )
-        
+        return displayItem
+    
     }//end render
 
 }// end class

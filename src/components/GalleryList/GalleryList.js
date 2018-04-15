@@ -6,7 +6,6 @@ class GalleryList extends Component{
     // }
 
     render(){
-        console.log(this.props.photoArray);
 
         let images = this.props.photoArray.map( image => {          
             return(
@@ -15,6 +14,7 @@ class GalleryList extends Component{
                 key = {image.id}
                 image = {image} 
                 getPhotos={this.props.getPhotos}
+                likedPhoto={this.props.likedPhoto}
                 />
             ) 
         })// end .map   
