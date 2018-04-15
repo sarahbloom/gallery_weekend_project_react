@@ -33,9 +33,9 @@ npm run client
 - [x] (`POST`) Display all of the images on the screen.
 - [x ] Swap the image with the description on click.
 - [x ] include a like button.
-- [ ] Display the number likes for each item 
-- [ ] When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
-- [] Update the gallery each time a like button is clicked.
+- [x ] Display the number likes for each item 
+- [x ] When the like button is clicked, use `Axios` to update (`PUT`) the like count             `/gallery/like/:id`.
+- [x] Update the gallery each time a like button is clicked.
 
 ### Wireframes
 

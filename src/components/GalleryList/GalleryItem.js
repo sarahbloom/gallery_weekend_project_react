@@ -11,7 +11,6 @@ class GalleryItem extends Component{
         super(props)
         this.state = {
             photoVisible: true,
-            // galleryItem: this.props.image
         }//end this.state
     }//end constructor
 
@@ -23,9 +22,6 @@ class GalleryItem extends Component{
         })   
     }//end hideShow
 
-    // likedPhoto = () =>{
-    //     this.props.likedPhoto(this.props.image)
-    // }
 
     likedPhoto = (image) => {
         axios.put(`/gallery/like/${this.props.image.id}`)

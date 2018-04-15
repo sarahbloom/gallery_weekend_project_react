@@ -28,16 +28,6 @@ class App extends Component {
     })
   }
 
-  // likedPhoto = (image) => {
-  //   axios.put(`/gallery/like/${image.id}`)
-  //     .then((response) => {
-  //       console.log('clicked photo PUT', image.likes);
-  //       // this.props.getPhotos();
-  //     }).catch((err) => {
-  //       console.log('error in PUT', err);
-  //     })//end .catch
-  // }//end PUT liked photo
-
   componentDidMount(){
     console.log('mounted')
     this.getPhotos()
