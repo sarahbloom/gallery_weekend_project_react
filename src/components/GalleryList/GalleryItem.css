@@ -13,7 +13,8 @@
 }
 
 .itemBox {
+    float: left;
     background-color: rgba(102, 144, 102, 0.657);
     width: 300px;
-    margin: auto;
+    margin: 10px;
 }

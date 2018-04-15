@@ -54,7 +54,7 @@ class GalleryItem extends Component{
                 <br />
                 <Button variant="fab" size="small" color="secondary" onClick={this.likedPhoto}><Favorite /></Button> 
                 <p>{this.props.image.likes} people liked this!</p>
-            </div>)
+                </div>)
         }
         return displayItem
     
