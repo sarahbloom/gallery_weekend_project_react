@@ -18,11 +18,11 @@ class App extends Component {
   getPhotos = () => {
     axios.get('/gallery')
     .then((response)=>{
-      console.log('GET /gallery success', response)
+      // console.log('GET /gallery success', response)
       this.setState({
         photoArray: response.data
       });
-      console.log('photoArray GET', this.state.photoArray);
+      // console.log('photoArray GET', this.state.photoArray);
     }).catch((err)=>{
       console.log('error GET /gallery', err);
     })
@@ -41,7 +41,7 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
-        <GalleryList photoArray = {this.state.photoArray}/>
+        <GalleryList photoArray={this.state.photoArray} getPhotos={this.getPhotos}/>
       </div>
     );
   }

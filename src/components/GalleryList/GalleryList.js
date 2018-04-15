@@ -13,7 +13,9 @@ class GalleryList extends Component{
                 // console.log('GalleryList', this.props.photoArray),
                 < GalleryItem
                 key = {image.id}
-                image = {image} />
+                image = {image} 
+                getPhotos={this.props.getPhotos}
+                />
             ) 
         })// end .map   
  
