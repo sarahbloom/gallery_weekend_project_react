@@ -1,7 +1,9 @@
 
 .textDisplay {
-    background-color: aliceblue;
-    margin-top: au;
+    background-color: rgb(144, 199, 247);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     height: 200px;
     width: 200px;
 }
