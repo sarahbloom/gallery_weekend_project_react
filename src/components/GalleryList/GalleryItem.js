@@ -50,9 +50,13 @@ class GalleryItem extends Component{
             displayItem = (
                 
                 <div className="itemBox">
-                <div className="textDisplay" onClick={this.hideShow}> {imageDescription}</div>
+                    <div className="textDisplay" onClick={this.hideShow}> 
+                        {imageDescription}
+                    </div>
                 <br />
-                <Button variant="fab" size="small" color="secondary" onClick={this.likedPhoto}><Favorite /></Button> 
+                <Button variant="fab" size="small" color="secondary" 
+                        onClick={this.likedPhoto}><Favorite />
+                    </Button> 
                 <p>{this.props.image.likes} people liked this!</p>
                 </div>)
         }
